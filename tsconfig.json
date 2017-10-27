@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "strict": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "esnext",
+    // if using webpack 2+ or rollup, to leverage tree shaking:
+    "moduleResolution": "node",
+    "target": "es5",
+    "jsx": "react",
+    "lib": [
+      "es2016",
+      "dom"
+    ]
+  }
+}

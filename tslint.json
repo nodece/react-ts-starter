@@ -1,0 +1,30 @@
+{
+  "rules": {
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "trailing-comma": false,
+    "max-classes-per-file": [],
+    "no-submodule-imports": false,
+    "no-console": [
+      false
+    ],
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
+    "jsx-no-lambda": false,
+    "semicolon": [
+      true,
+      "never"
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ]
+  },
+  "extends": [
+    "tslint-react",
+    "tslint:latest"
+  ]
+}
