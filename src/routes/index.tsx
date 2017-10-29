@@ -4,31 +4,15 @@ import About from '../components/About'
 import NotFind from '../components/error/NotFind'
 import Loadable from 'react-loadable'
 
-function Loading(props: any) {
-  if (props.isLoading) {
-    if (props.timedOut) {
-      return <div>Loader timed out!</div>
-    } else if (props.pastDelay) {
-      return <div>Loading...</div>
-    } else {
-      return null
-    }
-  } else if (props.error) {
-    return <div>Error! Component failed to load</div>
-  } else {
-    return null
-  }
-}
-
-const LoadableComponent = Loadable({
+const Main = Loadable({
   loader: () => import('../components/Main'),
-  loading: Loading,
+  loading: (() => null),
 })
 
 export function Routes() {
   return (
     <Switch>
-      <Route exact={true} path="/" component={LoadableComponent}/>
+      <Route exact={true} path="/" component={Main}/>
       <Route path="/about" component={About}/>
       <Route component={NotFind}/>
     </Switch>

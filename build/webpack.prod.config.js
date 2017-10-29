@@ -31,7 +31,6 @@ module.exports = merge(require('./webpack.base'), ({
             {
               loader: 'css-loader',
               options: {
-                importLoaders: 1,
                 minimize: true,
                 module: true
               }
@@ -49,7 +48,6 @@ module.exports = merge(require('./webpack.base'), ({
             {
               loader: 'css-loader',
               options: {
-                importLoaders: 1,
                 minimize: true,
                 module: true
               }

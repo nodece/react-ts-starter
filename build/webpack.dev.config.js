@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const merge = require('webpack-merge')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 const config = require('./config')
+
 process.env.NODE_ENV = 'development'
 
 module.exports = merge(require('./webpack.base'), ({
@@ -29,7 +30,12 @@ module.exports = merge(require('./webpack.base'), ({
         test: /\.css$/,
         use: [
           {loader: 'style-loader'},
-          {loader: 'css-loader'},
+          {
+            loader: 'css-loader',
+            options: {
+              module: true,
+            }
+          },
           {loader: 'postcss-loader'}
         ]
       },
@@ -37,7 +43,12 @@ module.exports = merge(require('./webpack.base'), ({
         test: /\.s[ac]ss/,
         use: [
           {loader: 'style-loader'},
-          {loader: 'css-loader'},
+          {
+            loader: 'css-loader',
+            options: {
+              module: true,
+            }
+          },
           {loader: 'sass-loader'},
           {loader: 'postcss-loader'}
         ]

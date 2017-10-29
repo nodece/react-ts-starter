@@ -2,6 +2,7 @@ const webpackConfig = require('./webpack.prod.config')
 const webpack = require('webpack')
 const rm = require('rimraf')
 const path = require('path')
+
 process.env.NODE_ENV = 'production'
 
 rm(path.resolve('dist'), err => {

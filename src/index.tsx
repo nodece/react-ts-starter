@@ -1,6 +1,5 @@
 import * as ReactDOM from 'react-dom'
 import * as React from 'react'
-import 'react-hot-loader/patch'
 import {default as DevTools, setLogEnabled, setUpdatesEnabled} from 'mobx-react-devtools'
 import {AppContainer as HotContainer} from 'react-hot-loader'
 import App from './App'
