@@ -1,7 +1,7 @@
 import {Provider} from 'mobx-react'
 import * as React from 'react'
 import {Routes} from './routes'
-import {HashRouter as Router} from 'react-router-dom'
+import {BrowserRouter as Router} from 'react-router-dom'
 import TestStore from './stores/TestStore'
 import {useStrict} from 'mobx'
 
