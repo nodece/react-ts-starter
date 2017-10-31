@@ -53,6 +53,21 @@ module.exports = merge(require('./webpack.base'), ({
           {loader: 'postcss-loader'}
         ]
       },
+      {
+        test: /\.less/,
+        use: [
+          {loader: 'style-loader'},
+          {
+            loader: 'css-loader',
+            options: {
+              module: false,
+            },
+          },
+          {loader: 'less-loader'},
+          // {loader: 'postcss-loader'}
+
+        ],
+      },
     ]
   },
 

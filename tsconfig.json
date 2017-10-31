@@ -3,6 +3,7 @@
     "outDir": "dist",
     "strict": true,
     "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "noImplicitAny": false,
     "removeComments": true,

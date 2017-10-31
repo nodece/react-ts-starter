@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^2.13.8",
     "axios": "^0.16.2",
     "mobx": "^3.3.0",
     "mobx-react": "^4.3.3",
@@ -32,6 +33,9 @@
     "extract-text-webpack-plugin": "^3.0.1",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^2.30.1",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "mobx-react-devtools": "^4.2.15",
     "node-sass": "^4.5.3",
     "opn": "^5.1.0",
     "postcss-loader": "^2.0.6",
@@ -48,8 +52,6 @@
     "url-loader": "^0.6.2",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1",
-    "webpack-merge": "^4.1.0",
-    "mobx-react-devtools": "^4.2.15"
-
+    "webpack-merge": "^4.1.0"
   }
 }
