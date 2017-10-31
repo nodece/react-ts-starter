@@ -14,6 +14,9 @@ new WebpackDerServer(webpack(config), {
   hotOnly: true,
   historyApiFallback: true,
   overlay: true,
+  proxy: {
+    "/api": "http://localhost:8080"
+  }
 }).listen(port, host, function (err, result) {
   if (err) {
     console.log(err)
